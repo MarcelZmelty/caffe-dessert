@@ -3,6 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const paths = require('./paths')
+const { Generator } = require('webpack')
 
 module.exports = {
   // Where webpack looks to start building the bundle
@@ -37,7 +38,7 @@ module.exports = {
     // Generates an HTML file from a template
     // Generates deprecation warning: https://github.com/jantimon/html-webpack-plugin/issues/1501
     new HtmlWebpackPlugin({
-      title: 'caffe sweets',
+      title: 'cafe sweets',
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
@@ -50,10 +51,10 @@ module.exports = {
       { test: /\.js$/, use: ['babel-loader'] },
 
       // Images: Copy image files to build folder
-      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: '/asset/resource' },
+      { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource', generator: { filename: 'assets/images/[name][ext]' }, },
 
       // Fonts and SVGs: Inline files
-      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+      { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/resource', generator: { filename: 'assets/fonts/[name][ext]' } },
 
       { test: /\.json$/, type: 'asset/resource' },
     ],

@@ -5,10 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div class="container">
-    <h1>Desserts</h1>
-    <div class="menu"></div>
-    <div class="cart"></div>
-  </div>
+  <main class="main">
+    <div class="main__container">
+      <div class="menu">
+        <h1 class="menu__title">Desserts</h1>
+        <div class="menu__positions"></div>
+      </div>
+      <div class="cart">
+        <h2 class="cart__title">Your Cart (<span>0</span>)</h2>
+        <div class="cart__default-view">
+          <div class="cart__default-img-container">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="cake-icon" class="cart__default-img">
+          </div>
+          <p class="cart__default-description">Your added items will appear here</p>
+        </div>
+      </div>
+    </div>
+</main>
 </body>
 </html>
+

@@ -12,10 +12,11 @@ export default class ListGenerator {
             })
     }
     renderDesserts() {
-        const menuList = document.querySelector('.menu')
+        const menuList = document.querySelector('.menu__positions')
         menuList.innerHTML = ``
         this.desserts.forEach(menuPosition => {
             menuList.appendChild(menuPosition.createMenuPosition())
         })
     }
+
 }

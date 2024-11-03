@@ -1,0 +1,49 @@
+/* Regular Font */
+@font-face {
+    font-family: 'RedHat';
+    src: url(../../public/fonts/RedHatText-Regular.ttf) format('truetype');
+    font-weight: normal;
+    /* Regular weight */
+    font-style: normal;
+    /* Normal style */
+}
+
+/* Bold Font */
+@font-face {
+    font-family: 'RedHat';
+    src: url(../../public/fonts/RedHatText-Bold.ttf) format('truetype');
+    font-weight: bold;
+    /* Bold weight */
+    font-style: normal;
+    /* Normal style */
+}
+
+/* Semibold Font */
+@font-face {
+    font-family: 'RedHat';
+    src: url(../../public/fonts/RedHatText-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    /* Semibold weight */
+    font-style: normal;
+    /* Normal style */
+}
+
+/* Italic Font */
+@font-face {
+    font-family: 'RedHat';
+    src: url(../../public/fonts/RedHatText-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: normal;
+    /* Regular weight */
+    font-style: italic;
+    /* Italic style */
+}
+
+/* Variable Font */
+@font-face {
+    font-family: 'RedHat';
+    src: url(../../public/fonts/RedHatText-VariableFont_wght.ttf) format('truetype');
+    font-weight: 100 900;
+    /* Weight range for variable font */
+    font-style: normal;
+    /* Normal style */
+}
