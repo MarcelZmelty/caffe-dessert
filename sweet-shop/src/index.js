@@ -1,6 +1,7 @@
 import "./styles/index.scss"
 import ListGenerator from "./js/dessertList.js"
 
-const test = new ListGenerator
+const dessertList = new ListGenerator
 
-test.dataFetch()
+dessertList.dataFetch()
+
